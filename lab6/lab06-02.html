@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>เกมทายตัวเลข</h1>
+    <p>ทายตัวเลขระหว่าง 1 ถึง 100</p>
+    <input type="text" id="guessField" placeholder="Guess a number" />
+    <input type="button" id="guessBtn" value="ส่งการคาดเดา" />
+    <div id="result"></div>
+    <div id="summary"></div>
+    <script>
+
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+        let numGuess = 0;
+ 
+        const guessFieldElm = document.getElementById("guessField");
+
+        guessBtn.addEventListener("click", function () {
+
+            const guess = guessFieldElm.value;
+            
+
+            if (isNaN(guess) || guess == "") {
+                document.getElementById("result").innerHTML = "กรุณากรอกตัวเลข";
+                guessFieldElm.select();
+            } else {
+  
+                if (guess > randomNumber) {
+                    document.getElementById("result").innerHTML = "มากไป";
+                } else if (guess < randomNumber) {
+                    document.getElementById("result").innerHTML = "น้อยไป";
+                } else {
+                    document.getElementById("result").innerHTML = "ถูกต้อง";
+                }
+                guessFieldElm.select();
+            }
+            
+            numGuess++;
+            
+            document.getElementById("summary").innerHTML = "ทายไปแล้ว " + numGuess + " ครั้ง";
+        });
+    </script>
+</body>
+</html>
