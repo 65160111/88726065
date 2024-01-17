@@ -2,15 +2,15 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin: 20px;
-    background-color: #f8f8f8;
+    background-color: #8891e2;
 }
 h1 {
     color: #333;
     font-size: 24px;
-    background-color: #bbffb2;
+    background-color: #91e9ff;
     padding: 15px;
     border-radius: 5px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -19,25 +19,25 @@ ul {
     padding: 0;
 }
 li {
-    background-color: #fff;
+    background-color: #f5e4ae;
     
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(155, 14, 184, 0.781);
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s, transform 0.2s;
  }
 li.completed {
-    background-color: #d4edda;
+    background-color: #002fff;
     text-decoration: line-through;
  }
 input[type="text"] {
     width: 60%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #f17070;
     border-radius: 8px;
     margin-right: 10px;
     font-size: 16px;
