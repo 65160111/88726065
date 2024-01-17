@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const addButton = document.getElementById("add-button");
     // อาร์เรย์ส าหรับเก็บรายการ Todo
     let todos = [];
+
     // เพิ่มรายการ Todo
     function addTodo() {
     const todoText = todoInput.value.trim();
@@ -62,3 +63,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // แสดงรายการ Todo คร้ังแรก
     renderTodoList();
     });
+
+    /** มีฟังก์ชันหลักๆ 4ฟังก์ชัน 
+     * ฟังก์ชัน addTodo ทำหน้าที่เพิ่มรายการโดยรับค่าข้อความจากการinputของผู้ใช้มาเก็บใน array จากนั้นเรียกใช้ฟังก์ชัน renderTodoList เพื่อแสดงรายการที่อัปเดตใหม่
+     * ฟังก์ชัน deleteTodo ทำหน้าที่ลบรายการ Todo 
+     * ฟังก์ชัน ToggleComplete ทำหน้าที่ตรวจสอบ/ยกเลิกการเสร็จสิ้นของรายการ
+     * ฟังก์ชัน renderTodoList เป็นฟังก์ชันที่ทำหน้าที่แสดงรายการ Todoบนหน้าเว็บโดยผ่านลูปอาเรย์เพื่อสร้างรายการ liใหม่สำหรับแต่ละรายการ
+     * 
+     * */ 
+    
